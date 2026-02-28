@@ -14,7 +14,7 @@ provider "azurerm" {
 
 # Resource Group module from private registry
 module "rg" {
-  source  = "akshayInfra/resourcegroup/azure"
+  source  = "app.terraform.io/akshayInfra/resourcegroup/azure"
   version = "1.0.0"
 
   rg_name     = var.rg_name
@@ -24,7 +24,7 @@ module "rg" {
 
 # VM module from private registry
 module "vm" {
-  source  = "akshayInfra/vmmodule/azure"
+  source  = "app.terraform.io/akshayInfra/vm-module/azure"
   version = "1.0.0"
 
   vm_name             = var.vm_name
