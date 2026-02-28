@@ -24,7 +24,7 @@ module "rg" {
 
 # VM module from private registry
 module "vm" {
-  source  = "akshayInfra/vm-module/azure"
+  source  = "akshayInfra/vmmodule/azure"
   version = "1.0.0"
 
   vm_name             = var.vm_name
